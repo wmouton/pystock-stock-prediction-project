@@ -56,3 +56,12 @@ forecast = m.predict(future)
 
 st.subheader('Forecast data')
 st.write(forecast.tail())
+
+# Plot data
+st.write('forecast data')
+fig1 = plot_plotly(m, forecast)
+st.plotly_chart(fig1)
+
+st.write('forecast components')
+fig2 = m.plot_components(forecast)
+st.write(fig2)
