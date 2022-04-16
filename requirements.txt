@@ -1,4 +1,5 @@
-fbprophet
 plotly
 streamlit
 yfinance
+pystan
+prophet
